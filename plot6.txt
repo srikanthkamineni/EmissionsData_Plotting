@@ -24,6 +24,5 @@ ggplot(both.emissions, aes(x=factor(year), y=Emissions, fill=County), dpi=72) +
     facet_grid(County  ~ ., scales="free") +
     ylab (expression('total PM'[2.5]*" emission")) + 
     xlab("year") +
-    ggtitle("Comparison of Motor vehicle emissions
-              in Baltimore and Los Angeles from 1999 - 2008")
+    ggtitle(expression("Comparison of Motor vehicle emissions\nin Baltimore and Los Angeles from 1999 - 2008"))
 ggsave("plot6.png")
